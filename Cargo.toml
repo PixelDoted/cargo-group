@@ -7,7 +7,7 @@ license = "MIT"
 categories = ["development-tools::cargo-plugins"]
 keywords = ["cargo", "subcommand", "workspaces"]
 repository = "https://github.com/PixelDoted/cargo-group"
-documentation = "docs.rs/cargo-group"
+documentation = "https://docs.rs/cargo-group"
 readme = "README.md"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
