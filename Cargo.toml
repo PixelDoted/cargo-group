@@ -6,7 +6,8 @@ description = "Create and Modify workspaces from the terminal"
 license = "MIT"
 categories = ["development-tools::cargo-plugins"]
 keywords = ["cargo", "subcommand", "workspaces"]
-repository = ""
+repository = "https://github.com/PixelDoted/cargo-group"
+documentation = "docs.rs/cargo-group"
 readme = "README.md"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
