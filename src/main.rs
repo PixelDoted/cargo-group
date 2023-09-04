@@ -10,8 +10,18 @@ mod util;
 mod workspace;
 
 fn main() {
-    let command = cli::Commands::parse();
+    // Cargo Subcommand
+    let mut args = std::env::args().skip(1).peekable();
+    if let Some(arg) = args.peek() {
+        if arg != "group" {
+            args.next().unwrap();
+        }
+    }
 
+    // Parse Arguments
+    let command = cli::Commands::parse_from(args);
+
+    // Execute Command
     match command {
         Commands::Init { resolver } => {
             if PathBuf::from("./Cargo.toml").exists() {
