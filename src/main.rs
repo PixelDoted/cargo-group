@@ -39,7 +39,7 @@ fn main() {
                 return;
             }
 
-            let mut args = vec!["new", path.to_str().unwrap()];
+            let mut args = vec!["new", path.to_str().unwrap(), "--vcs", "none"];
             if lib {
                 args.push("--lib");
             }
